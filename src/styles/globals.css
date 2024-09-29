@@ -2,26 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: #E0F7FA; /* Color de fondo suave */
+  --foreground: #263238; /* Color de texto oscuro */
+  --accent: #48acda; /* Color de acento para tarjetas y botones */
+  --button-hover: #FF9800; /* Color para el hover del botón */
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif; /* Fuente recomendada */
+  line-height: 1.6; /* Mejora la legibilidad */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+a {
+  text-decoration: none;
+  color: var(--foreground);
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: var(--accent); /* Color de enlace al pasar el mouse */
+}
+
+.button {
+  background-color: var(--accent);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px; /* Bordes más redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s; /* Agregar transición para transform */
+}
+
+.button:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+/* Estilo para tarjetas de proyectos */
+.project-card {
+  background-color: white; /* Fondo blanco para las tarjetas */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Sombra suave */
+  padding: 20px;
+  margin: 10px;
+  transition: transform 0.3s; /* Suave efecto al hacer hover */
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Elevar la tarjeta al pasar el mouse */
 }
