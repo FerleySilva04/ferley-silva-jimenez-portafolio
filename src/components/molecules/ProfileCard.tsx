@@ -28,7 +28,7 @@ export const ProfileCard = () => {
           width={150}
           height={150}
           sizes="100%"
-          src={"/images/me.jpg"}
+          src={"/images/yo.jpg"}
           alt="Foto en la que aparezco yo"
           priority={false}
         />
