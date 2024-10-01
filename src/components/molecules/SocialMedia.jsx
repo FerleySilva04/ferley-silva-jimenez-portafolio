@@ -1,6 +1,6 @@
 import React from "react";
 import { Heading } from "../atoms/Heading";
-import { GithubIcon, Facebook } from "lucide-react"; // Asegúrate de que FacebookIcon esté disponible en lucide-react
+import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa"; // Importa los íconos de react-icons
 import { CircularIcon } from "../atoms/CircularIcon";
 
 export const SocialMedia = () => {
@@ -8,17 +8,22 @@ export const SocialMedia = () => {
     {
       socialName: "GitHub",
       url: "https://github.com/FerleySilva04",
-      icon: <GithubIcon />,
+      icon: <FaGithub className="w-8 h-8" />, // Tamaño aumentado
     },
     {
       socialName: "Facebook",
-      url: "https://www.facebook.com/ferleyjose.silvajimenez.1/", // Cambia "tu-usuario" por tu nombre de usuario real de Facebook
-      icon: <Facebook />, // Asegúrate de que este icono exista
+      url: "https://www.facebook.com/ferleyjose.silvajimenez.1/",
+      icon: <FaFacebook className="w-8 h-8" />, // Tamaño aumentado
+    },
+    {
+      socialName: "LinkedIn",
+      url: "https://www.linkedin.com/in/ferley-jose-silva-jimenez-52046b330/",
+      icon: <FaLinkedin className="w-8 h-8" />, // Tamaño aumentado
     },
   ];
 
   return (
-    <section className="flex flex-col justify-head items-head">
+    <section className="flex flex-col justify-start items-start">
       <Heading text="Links" className="font-sans mb-4" />
       {socialsLinks.map((social, index) => (
         <CircularIcon
