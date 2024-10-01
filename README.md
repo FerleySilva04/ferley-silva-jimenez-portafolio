@@ -1,40 +1,49 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portafolio --- Ferley Silva
 
-## Getting Started
+Este proyecto es un portafolio personal desarrollado como parte del curso de Ingeniería Web. El portafolio muestra los trabajos y proyectos mios.
 
-First, run the development server:
+## Descripción
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+El portafolio posee información personal, asi como proyectos que he realizado. Está diseñado utilizando Next.js, Tailwind CSS y TypeScript.
+
+## Estructura del Proyecto 
+
+El proyecto tiene carpetas como:
+
+- **Components**: Al usar la metodología de atomic design aquí estaran los átomos, moleculas y organismos en carpetas dentro de la misma.
+- **Constants**: Aquí guardo todas las constantes útiles para ser mapeadas en los diferentes componentes
+- **Types**: En esta carpeta se encuentras las propiedades para los componentes
+
+## Instalación
+
+Para instalar y ejecutar este proyecto localmente, sigue estos pasos:
+
+1. Clona el repositorio:
+
+```sh
+git clone <URL_DEL_REPOSITORIO>
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Instala las dependencias:
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```sh
+   yarn install
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+3. Ejecuta el proyecto en modo desarrollo:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```sh
+   yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Abre tu navegador y navega a `http://localhost:3000`.
 
-## Learn More
+## Tecnologías Utilizadas
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.ts**: Framework de React para aplicaciones web.
+- **Tailwind CSS**: Framework de CSS para diseño responsivo.
+- **Vercel**: Plataforma de despliegue.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Autor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Ferley Silva Jiménez** - [GitHub](https://github.com/FerleySilva04)
