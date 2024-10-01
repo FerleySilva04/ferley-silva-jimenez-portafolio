@@ -12,7 +12,7 @@ export const Profile = () => {
           width={100}
           height={100}
           sizes="100dvh"
-          src={"/images/yo.jpg"}
+          src={"/images/Ferley.png"}
           alt="Foto de perfil"
           priority={false}
         />

@@ -7,13 +7,5 @@ export const languages = [
       idiom: "Inglés",
       level: 40,
     },
-    {
-      idiom: "Italiano",
-      level: 30,
-    },
-    {
-      idiom: "Portugues",
-      level: 10,
-    },
   ];
   

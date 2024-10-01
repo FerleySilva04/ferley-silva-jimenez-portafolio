@@ -15,7 +15,7 @@ export const ProfileCard = () => {
           </span>
         </div>
         <Description text="Actualmente soy estudiante de Ingeniería en Sistemas en la Universidad de Antioquia." />
-        <Description text="Apasionado por el diseño de interfaces y enfocado en mejorar la experiencia del usuario en la web." />
+        <Description text="Encaminado por el diseño de interfaces y enfocado en mejorar la experiencia del usuario en la web." />
         <Button
           text="Contrátame →"
           className="w-[154px] h-[40px] text-center bg-sky-800 text-white rounded-md hover:bg-sky-700 transition duration-200"
@@ -28,7 +28,7 @@ export const ProfileCard = () => {
           width={150}
           height={150}
           sizes="100%"
-          src={"/images/yo.jpg"}
+          src={"/images/Ferley.png"}
           alt="Foto en la que aparezco yo"
           priority={false}
         />
