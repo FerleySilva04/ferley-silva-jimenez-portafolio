@@ -12,10 +12,6 @@ export const programmingLanguages = [
       level: 40,
     },
     {
-      pLanguage: "R",
-      level: 20,
-    },
-    {
       pLanguage: "CSS",
       level: 80,
     },
